@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'ATOM  2 ระบบกำลังดังเนินการในขณนี้'
 			];	
-			}}if else ($text =3){
+			}if else ($text =3){
 				// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'ATOM 3 อีก3 นาทีจะเสร็จสิ้น'
 			];	
-			}}if else ($text =4){
+			}if else ($text =4){
 				// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'ATOM  4 ได้กำเนินการเรียบร้อยแล้ว' 
 			];	
-			}}if else ($text =5){
+			} else ($text =5){
 				// Get replyToken
 			$replyToken = $event['replyToken'];
 
