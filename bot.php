@@ -13,6 +13,8 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			if($text == 1 ){
+				
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -22,6 +24,9 @@ if (!is_null($events['events'])) {
 				'text' => 'ATOM ได้รับข้อความแล้วคับ'
 			];
 
+				
+			}
+			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
