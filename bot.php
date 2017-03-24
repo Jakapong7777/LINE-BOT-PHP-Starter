@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
+				'type' => 'ATOM ได้รับข้อความแล้วคับ',
 				'text' => $text
 			];
 
