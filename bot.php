@@ -21,10 +21,17 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ATOM ได้รับข้อความแล้วคับ'
-			];
+				'text' => 'ATOM  ได้รับคำสั่ง 1 และได้เริ่มทำงาน'
+			];	
+			} else{
+				// Get replyToken
+			$replyToken = $event['replyToken'];
 
-				
+			// Build message to reply back
+			$messages = [
+				'type' => 'text',
+				'text' => 'ATOM  ได้รับคำสั่งอื่นจะไม่ดำเนินการใดๆทั้งสิ้น'
+			];	
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
