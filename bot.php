@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ATOM  2 ระบบกำลังดังเนินการในขณนี้'
+				'text' => 'ATOM ได้รับคำสั่ง 2 ระบบกำลังดังเนินการในขณนี้'
 			];	
 			} else if ($text == 3){
 				// Get replyToken
@@ -39,7 +39,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ATOM 3 อีก3 นาทีจะเสร็จสิ้น'
+				'text' => 'ATOM ได้รับคำสั่ง 3 อีก 10 นาทีจะเสร็จสิ้น'
 			];	
 			} else if($text == 4){
 				// Get replyToken
@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ATOM  4 ได้กำเนินการเรียบร้อยแล้ว' 
+				'text' => 'ATOM ได้รับคำสั่ง 4 ได้กำเนินการเรียบร้อยแล้ว' 
 			];	
 			} else {
 				// Get replyToken
