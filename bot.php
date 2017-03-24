@@ -21,9 +21,36 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ATOM  ได้รับคำสั่ง 1 และได้เริ่มทำงาน'
+				'text' => 'ATOM  ได้รับคำสั่ง 1 และได้เริ่มทำการสดสอบ'
 			];	
-			} else{
+			}if else ($text =2){
+				// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+			$messages = [
+				'type' => 'text',
+				'text' => 'ATOM  2 ระบบกำลังดังเนินการในขณนี้'
+			];	
+			}}if else ($text =3){
+				// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+			$messages = [
+				'type' => 'text',
+				'text' => 'ATOM 3 อีก3 นาทีจะเสร็จสิ้น'
+			];	
+			}}if else ($text =4){
+				// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+			$messages = [
+				'type' => 'text',
+				'text' => 'ATOM  4 ได้กำเนินการเรียบร้อยแล้ว' 
+			];	
+			}}if else ($text =5){
 				// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -33,6 +60,8 @@ if (!is_null($events['events'])) {
 				'text' => 'ATOM  ได้รับคำสั่งอื่นจะไม่ดำเนินการใดๆทั้งสิ้น'
 			];	
 			}
+	
+			
 			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
