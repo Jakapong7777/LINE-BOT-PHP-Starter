@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'ATOM  4 ได้กำเนินการเรียบร้อยแล้ว' 
 			];	
-			} else ($text =5){
+			} else {
 				// Get replyToken
 			$replyToken = $event['replyToken'];
 
